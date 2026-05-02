@@ -16,3 +16,16 @@ The following six stocks are included in the portfolio:
 - سپیدار
 - سصوفی
 - تپسی
+Project Workflow
+The notebook performs the following steps:
+
+1. Data collection from Tehran Stock Exchange using finpy_tse
+2. Data preprocessing and return calculation
+3. Price normalization and exploratory visualization
+4. Random portfolio weight generation
+5. Monte Carlo simulation of portfolios
+6. Risk and return calculation
+7. Sharpe ratio analysis
+8. Portfolio optimization using scipy.optimize
+9. Efficient frontier construction
+10. Visualization of optimal portfolios and risk-return tradeoff
