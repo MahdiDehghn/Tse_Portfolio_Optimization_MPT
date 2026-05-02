@@ -16,6 +16,7 @@ The following six stocks are included in the portfolio:
 - سپیدار
 - سصوفی
 - تپسی
+
 Project Workflow
 The notebook performs the following steps:
 
