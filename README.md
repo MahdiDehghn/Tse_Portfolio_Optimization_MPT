@@ -1,14 +1,15 @@
-# Tse_Portfolio_Optimization_MPT
-Portfolio optimization of selected Tehran Stock Exchange stocks using Random Portfolios, Modern Portfolio Theory (MPT), SciPy optimization, and Efficient Frontier analysis.
-Tehran Stock Exchange Portfolio Optimization (MPT)
-This project analyzes and optimizes a portfolio of selected stocks from the Tehran Stock Exchange (TSE) using Modern Portfolio Theory (MPT).
+# Tse Portfolio Optimization (MPT)
 
-The workflow is implemented in a single Jupyter Notebook and includes random portfolio generation, Sharpe ratio analysis, and numerical optimization using SciPy.
+Portfolio optimization of selected Tehran Stock Exchange (TSE) stocks using Modern Portfolio Theory (MPT), Monte Carlo simulation, and SciPy-based optimization.
 
-All price data is retrieved dynamically using the finpy_tse library.
+All data is retrieved dynamically from TSE via the [finpy_tse] library.  
+The project is fully contained in a single Jupyter Notebook.
 
-Stocks Analyzed
-The following six stocks are included in the portfolio:
+---
+
+## 📈 Stocks Analyzed
+
+The portfolio consists of the following six actively traded stocks:
 
 - دکپسول
 - فولاد
@@ -17,16 +18,58 @@ The following six stocks are included in the portfolio:
 - سصوفی
 - تپسی
 
-Project Workflow
-The notebook performs the following steps:
+---
 
-1. Data collection from Tehran Stock Exchange using finpy_tse
-2. Data preprocessing and return calculation
-3. Price normalization and exploratory visualization
-4. Random portfolio weight generation
-5. Monte Carlo simulation of portfolios
-6. Risk and return calculation
-7. Sharpe ratio analysis
-8. Portfolio optimization using scipy.optimize
-9. Efficient frontier construction
-10. Visualization of optimal portfolios and risk-return tradeoff
+## 🗂️ Project Workflow
+
+The notebook follows these steps:
+
+1. **Data Collection:** Fetches historical prices from TSE using `finpy_tse`
+2. **Preprocessing:** Cleans data, reindexes, calculates returns
+3. **Exploratory Analysis:** Normalizes prices for visualization
+4. **Random Portfolio:** Randomly generates portfolio weights (Monte Carlo simulation)
+5. **Simulation:** Simulates thousands of portfolios to analyze distribution of risk/return/Sharpe
+6. **Risk/Return Calculation:** Calculates volatility, expected return, and Sharpe ratio
+7. **Optimization:** Maximizes Sharpe ratio using `scipy.optimize` (`SLSQP` method)
+8. **Efficient Frontier:** Constructs and visualizes the set of optimal risk–return portfolios
+9. **Results Visualization:** Plots portfolios, efficient frontier, and highlights the optimal portfolios
+
+---
+
+## 🚦 Efficient Frontier Example
+
+![Efficient Frontier Example](image.png)
+
+---
+
+## 🛠️ Libraries Used
+
+- numpy
+- pandas
+- matplotlib
+- plotly
+- scipy
+- finpy-tse
+- jupyter
+
+---
+
+## 📊 Output
+
+- Normalized price line plots
+- Scatter plot of portfolios (risk/return/Sharpe)
+- Efficient frontier with highlighted maximum Sharpe and minimum volatility portfolios
+- Tabular summary of portfolio weights, expected return, risk, and Sharpe ratio
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for educational and research purposes only.  
+No content or results represent financial advice or a recommendation to invest or trade.
+
+---
+
+## 📝 License
+
+[MIT](LICENSE)

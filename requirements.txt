@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+plotly
+pandas-datareader
+scipy
+finpy-tse
+jupyter
